@@ -1,6 +1,15 @@
 import './App.css';
+import { incrementCountReturnValue } from './apiCalls/CountApi';
+import { useEffect } from 'react';
 
 function App() {
+  
+  // const [countValue, setCountValue] = useState<>(null);
+
+  useEffect(() => {
+    incrementCountReturnValue();
+  },[])
+
   return (
     <div className="App">
       <header className="App-header">
