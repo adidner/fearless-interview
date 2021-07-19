@@ -1,29 +1,35 @@
 import './App.css';
 import { incrementCountReturnValue } from './apiCalls/CountApi';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   
-  // const [countValue, setCountValue] = useState<>(null);
+  const [countValue, setCountValue] = useState<number | undefined>(undefined);
+  const [countError, setCountError] = useState<string>("");
+
+  const onSuccess = (newValue: number) => {
+    setCountValue(newValue);
+  }
+
+  const onError = (errorMessage: string) => {
+    setCountError(errorMessage);
+  }
+
 
   useEffect(() => {
-    incrementCountReturnValue();
-  },[])
+    incrementCountReturnValue(onSuccess, onError);
+  },[]);
+
+
+  const handleIncrement = () => {
+    incrementCountReturnValue(setCountValue,setCountError);
+  }
 
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div> {countError === "" ? countValue : countError} </div>
+        <button onClick={handleIncrement}>Increment Count</button>        
       </header>
     </div>
   );
