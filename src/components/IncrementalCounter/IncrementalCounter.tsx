@@ -2,6 +2,7 @@ import { incrementCountReturnValue, countReturnValue } from '../../apiCalls/Coun
 import { useEffect, useState } from 'react';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import './IncrementalCounter.css'
 
 export function IncrementalCounter() {
   
@@ -34,7 +35,7 @@ export function IncrementalCounter() {
   const showLoadingErrorOrCount = () => {
     let message: string = "";
     if(loadingCount){
-      message = "Content is loading this should only take a sec!";
+      message = "Loading...";
     }
     else if(countError !== ""){
       message = countError;
@@ -48,8 +49,10 @@ export function IncrementalCounter() {
 
   return (
     <>
-        {loadingCount ? <CircularProgress/> : null}
-        {showLoadingErrorOrCount()}
+        <div className={"incrementalcounter-message-loader-container"}>
+          {showLoadingErrorOrCount()}
+          {loadingCount ? <CircularProgress/> : null}
+        </div>
         <Button onClick={handleIncrement} variant={'contained'}>Increment Count</Button>        
     </>
   );
