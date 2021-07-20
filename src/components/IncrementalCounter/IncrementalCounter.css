@@ -1,0 +1,5 @@
+.incrementalcounter-message-loader-container{
+    display: flex;
+    flex-direction: row;
+    color: yellow;
+}

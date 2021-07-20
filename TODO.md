@@ -54,7 +54,7 @@
 
 [x] - The port the solution is served on is confirugable and documented in the solution.md
 
-[ ] - Implement other features that demonstrate your skill
+[~] - Implement other features that demonstrate your skill (Using UI library, doing spinners and conditional rendering, hard to do without making wild assumption)
 
 
 ## Other should do's
