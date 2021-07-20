@@ -59,6 +59,6 @@
 
 ## Other should do's
 
-[ ] - Double check documentation and code base
+[x] - Double check documentation and code base
 
-[ ] - Make sure solutions.md is covered in that fashion
+[x] - Make sure solutions.md is covered in that fashion
