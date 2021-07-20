@@ -2,8 +2,9 @@
 
 # How to run this project
 1. Download or clone this project
+1. Run npm install to gain the necessary packages to run this program (assumes you have npm)
 1. open your favorite command line terminal
-1. To run on http://localhost:3000, type 'npm run start' (assumes you have npm)
+1. To run on http://localhost:3000, type 'npm run start' 
 
 
 # Assumptions
