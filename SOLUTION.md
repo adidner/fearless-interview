@@ -2,9 +2,16 @@
 
 # How to run this project
 1. Download or clone this project
-1. Run npm install to gain the necessary packages to run this program (assumes you have npm)
+1. Run `npm install` to gain the necessary packages to run this program (assumes you have npm)
 1. open your favorite command line terminal
-1. To run on http://localhost:3000, type 'npm run start' 
+1. To run on http://localhost:3000, type `npm run start`
+1. http://localhost:3000 should open in your default browser automatically, if not try navigating to that url in the chrome
+1. to run on a custom port run `npx cross-env PORT=8080 react-scripts start` (replace 8080 with desired port number)
+
+# To build this project for deployment
+1. Download or clone this project
+1. Run `npm install` to gain the necessary packages to run this program (assumes you have npm)
+1. Run `npm run build` and the output you desire should be in the build directory
 
 
 # Assumptions
@@ -15,3 +22,7 @@
 # Potential Expansions / Outstanding todo's
 - Would probably good to have a debound on the API call just so the user can't spam
 - Spinner/loader jumps the screen just a tad, would make it prettier but I'm tired
+- It would be nice to make the site/component prettier/more functional but both of those depend on who its for
+- If components were necessary anywhere here I couldn't tell you where. I suppose you might want the IncrementalCounter concept of this whole page as a widget or something so I made it a reusable component. But I wasn't about to make buttons or spinners from scratch which would also have been reusable components
+- Test of some fashion would probably be good
+

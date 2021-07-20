@@ -30,3 +30,35 @@
     - Jest testing
     - more options for API callbacks/operations
     - Docker stuff
+
+
+
+# Double Checking checklist
+## Must Haves
+[x] - Web Application that usese javascript and HTML that is served on port 3000
+
+[x] - Use the https://countapi.xyz/ api to manage counting with api key as noted in doc
+
+[x] - Provide a single button to "hit" the counting api and display the current number of hits
+
+[x] - Runs locally with a single startup command
+
+[x] - Should run correctly in Chrome; don't worry about cross browser compatibility
+
+[x] - Includes a solution.md that provides relevant documentation including how to build and run the solution
+
+## Nice to Haves
+[ ] - Includes a Dockerfile that will run and serve the web application
+
+[x] - Any components are reusable (although there aren't really opprotunities for this lowkey)
+
+[x] - The port the solution is served on is confirugable and documented in the solution.md
+
+[ ] - Implement other features that demonstrate your skill
+
+
+## Other should do's
+
+[ ] - Double check documentation and code base
+
+[ ] - Make sure solutions.md is covered in that fashion
