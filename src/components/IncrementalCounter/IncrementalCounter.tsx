@@ -1,4 +1,4 @@
-import { incrementCountReturnValue } from '../../apiCalls/CountApi';
+import { incrementCountReturnValue, countReturnValue } from '../../apiCalls/CountApi';
 import { useEffect, useState } from 'react';
 
 export function IncrementalCounter() {
@@ -16,7 +16,7 @@ export function IncrementalCounter() {
 
 
   useEffect(() => {
-    incrementCountReturnValue(onSuccess, onError);
+    countReturnValue(onSuccess, onError);
   },[]);
 
 
