@@ -1,7 +1,9 @@
-
+# Pre-requisites
+- Have git installed
+- Have node installed
+- Have this repo cloned
 
 # How to run this project
-1. Download or clone this project
 1. Run `npm install` to gain the necessary packages to run this program (assumes you have npm)
 1. open your favorite command line terminal
 1. To run on http://localhost:3000, type `npm run start`
@@ -9,9 +11,15 @@
 1. to run on a custom port run `npx cross-env PORT=8080 react-scripts start` (replace 8080 with desired port number)
 
 # To build this project for deployment
-1. Download or clone this project
 1. Run `npm install` to gain the necessary packages to run this program (assumes you have npm)
 1. Run `npm run build` and the output you desire should be in the build directory
+
+# To run this project with Docker
+1. install docker for your machine [install here](https://docs.docker.com/get-docker/)
+1. clone this directory using git
+1. build via the command `npm run docker:build`
+1. run via the command `npm run docker:run`
+1. clicking on the link that pops up will take you to the site, alternatively going to http://localhost:3000 in your browser manually will also work
 
 
 # Assumptions
