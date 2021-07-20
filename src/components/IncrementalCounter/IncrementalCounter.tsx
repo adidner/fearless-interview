@@ -51,7 +51,7 @@ export function IncrementalCounter() {
     <>
         <div className={"incrementalcounter-message-loader-container"}>
           {showLoadingErrorOrCount()}
-          {loadingCount ? <CircularProgress/> : null}
+          {loadingCount ? <CircularProgress color={"inherit"} size={25}/> : null}
         </div>
         <Button onClick={handleIncrement} variant={'contained'}>Increment Count</Button>        
     </>
