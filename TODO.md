@@ -48,7 +48,7 @@
 [x] - Includes a solution.md that provides relevant documentation including how to build and run the solution
 
 ## Nice to Haves
-[ ] - Includes a Dockerfile that will run and serve the web application
+[x] - Includes a Dockerfile that will run and serve the web application
 
 [x] - Any components are reusable (although there aren't really opprotunities for this lowkey)
 
